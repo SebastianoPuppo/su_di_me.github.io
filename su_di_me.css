@@ -1,0 +1,131 @@
+#sfondo{
+  background-color: #DBDADA;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.citazione{
+  margin-left: 700px;
+  margin-top: 270px;
+  margin-right: 210px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  text-align: center;
+}
+
+p{
+  margin-left: 700px;
+  padding-top: 25px;
+  margin-right: 210px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.titolo{
+  font-size: 80px;
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+  text-align: center;
+  padding-top: 50px;
+  margin-left: 40%;
+  color: white;
+}
+
+
+#immagine1{
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 10px;
+  border-color: white;
+  margin-top: 220px;
+  margin-left: 440px;
+  background: url("foto_io.jpeg");
+  background-size: cover;
+}
+
+#immagine2{
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 10px;
+  border-color: white;
+  margin-top: 450px;
+  margin-left: 440px;
+  background: url("gente.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+
+
+#immagine3{
+  position: absolute;
+  width: 180px;
+  height: 410px;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 10px;
+  border-color: white;
+  margin-top: 220px;
+  margin-left: 210px;
+  background: url("circo_2.jpeg");
+  background-size: 180px;
+  background-size: cover;
+  background-position: center;
+
+}
+
+#immagine3:hover{
+  animation: sfuma1;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  }
+
+  #immagine2:hover{
+    animation: sfuma2;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    }
+
+    #immagine1:hover{
+      animation: sfuma3;
+      animation-duration: 1s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      }
+
+
+@keyframes sfuma1 {
+  from {background: url("circo_2.jpeg");
+  background-size: cover;
+  background-position: top}
+    to {background: url("circo.jpg");
+    background-size: cover;
+    background-position: top;}
+}
+
+
+@keyframes sfuma2 {
+  from {background: url("gente.jpg");
+  background-size: cover;
+  background-position: bottom}
+    to {background: url("gente_2.jpg");
+    background-size: cover;
+    background-position: bottom;}
+}
+
+@keyframes sfuma3 {
+  from {background: url("foto_io.jpeg");
+  background-size: cover;}
+    to {background: url("foto_2.jpg");
+    background-size: cover;}
+}
